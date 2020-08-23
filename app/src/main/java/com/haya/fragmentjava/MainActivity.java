@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         // メソッドの1つ目の引数は対象のViewGroupのID、2つ目の引数は追加するfragment
         transaction.add(R.id.container, MainFragment.createInstance("hoge", Color.RED));
         transaction.add(R.id.container, MainFragment.createInstance("fuga", Color.BLUE));
-        transaction.add(R.id.container, MainFragment.createInstance("fuga", Color.GREEN));
         // 最後にcommitを使用することで変更を反映します
         transaction.commit();
     }
